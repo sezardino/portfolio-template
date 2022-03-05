@@ -1,0 +1,31 @@
+module.exports = {
+  extends: "next/core-web-vitals",
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  rules: {
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-shadow": "off",
+    "import/no-extraneous-dependencies": ["off"],
+    "arrow-parens": ["error", "always"],
+    semi: ["error", "always"],
+    "no-unexpected-multiline": "error",
+    "import/extensions": ["off"],
+    "class-methods-use-this": ["off"],
+    "no-plusplus": ["warn"],
+    "no-param-reassign": ["warn"],
+    "import/no-unresolved": ["off"],
+    "vue/require-default-prop": ["off"],
+    "space-before-function-paren": ["off"],
+    "max-len": ["error", { code: 130 }],
+    "@typescript-eslint/semi": ["warn"],
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        allowSingleExtends: false,
+      },
+    ],
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "jsx-a11y/alt-text": ["off"],
+  },
+};
