@@ -1,0 +1,18 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 Checking your code before pushing'
+
+if [[ `git status --porcelain` ]]; then
+    echo 'Please make sure your working directory is clean.';
+    false;
+else
+    # Run typescript compiler and lint to see if you accidentally broke something
+    yarn tsc -p tsconfig.json && npm run lint:fix ||
+    (
+        echo 'TypeScript and/or Lint check failed';
+        false;
+    )
+fi
+
+echo '✅ Pushing'

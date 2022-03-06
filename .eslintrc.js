@@ -25,7 +25,7 @@ module.exports = {
         allowSingleExtends: false,
       },
     ],
-    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
     "jsx-a11y/alt-text": ["off"],
   },
 };
