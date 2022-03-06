@@ -8,10 +8,20 @@ export const StyledHeadline = styled.div`
   gap: ${(props) => props.theme.spacing.xs};
 `;
 
-export const StyledSpan = styled.span`
+export const StyledSpan = styled.span<Pick<HeadlineProps, "as">>`
   color: ${(props) => props.theme.colors.primary};
-  font-size: ${(props) => props.theme.fonts.cta.sz};
-  line-height: ${(props) => props.theme.fonts.cta.lh};
+  font-size: ${(props) =>
+    props.as === "h1"
+      ? props.theme.fonts.cta.sz
+      : props.as === "h3"
+      ? props.theme.fonts.caption.sz
+      : props.theme.fonts.base.sz};
+  line-height: ${(props) =>
+    props.as === "h1"
+      ? props.theme.fonts.cta.lh
+      : props.as === "h3"
+      ? props.theme.fonts.caption.lh
+      : props.theme.fonts.base.lh};
 `;
 
 export const StyledAccent = styled.span<

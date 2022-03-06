@@ -11,6 +11,7 @@ const BaseSecondaryButton = styled(BaseButton)`
   padding: 12px 22px;
   border-radius: ${(props) => props.theme.borderRadius.xs};
   border: 2px solid ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.secondary};
   font-weight: ${(props) => props.theme.fonts.bold};
 `;
 

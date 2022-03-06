@@ -18,8 +18,8 @@ export const fonts = {
     lh: "4.3rem",
   },
   h2: {
-    sz: "4rem",
-    lh: "4.3rem",
+    sz: "3rem",
+    lh: "3.3rem",
   },
   h3: {
     sz: "3rem",
@@ -28,5 +28,9 @@ export const fonts = {
   h4: {
     sz: "2rem",
     lh: "2.3rem",
+  },
+  caption: {
+    sz: "1.2rem",
+    lh: "1.5rem",
   },
 };

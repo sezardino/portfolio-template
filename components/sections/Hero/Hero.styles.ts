@@ -76,4 +76,8 @@ export const ContactLinks = styled.div`
       }
     }
   }
+
+  @media ${(props) => props.theme.media.smMobileOnly} {
+    display: none;
+  }
 `;

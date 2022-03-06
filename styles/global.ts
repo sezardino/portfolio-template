@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.primary};
     font-family: ${(props) => props.theme.fonts.family};
     font-size: ${(props) => props.theme.fonts.base.sz};
     line-height: ${(props) => props.theme.fonts.base.lh};

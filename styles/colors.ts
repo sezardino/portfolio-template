@@ -1,11 +1,15 @@
 export const colorPalette = {
-  grey: "#1d1d1d",
-  white: "#b4b7be",
+  dark: "#1d1d1d",
+  darkSecond: "#2c2929",
+  gray: "#b4b7be",
+  white: "#ffffff",
   yellow: "#F1D663",
 };
 
 export const colors = {
-  primary: colorPalette.white,
-  secondary: colorPalette.grey,
+  primary: colorPalette.gray,
+  secondary: colorPalette.dark,
+  secondaryWhite: colorPalette.darkSecond,
   accent: colorPalette.yellow,
+  white: colorPalette.white,
 };
