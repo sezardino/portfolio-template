@@ -5,6 +5,7 @@ import { media } from "./media";
 import { colors } from "./colors";
 import { spacing } from "./spacing";
 import { fonts } from "./fonts";
+import { borderRadius } from "./border-radius";
 
 declare module "styled-components" {
   export interface DefaultTheme {
@@ -12,5 +13,6 @@ declare module "styled-components" {
     colors: typeof colors;
     spacing: typeof spacing;
     fonts: typeof fonts;
+    borderRadius: typeof borderRadius;
   }
 }

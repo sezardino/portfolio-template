@@ -1,11 +1,15 @@
 export const fonts = {
   family: "'Roboto', sans-serif",
+  thin: '100',
+  regular: '400',
+  medium: '500',
+  bold: '700',
   html: "10px",
   base: {
     sz: "1.5rem",
     lh: "1.8rem",
   },
-  subHeading: {
+  cta: {
     sz: "1.8rem",
     lh: "2.1rem",
   },

@@ -10,8 +10,8 @@ export const StyledHeadline = styled.div`
 
 export const StyledSpan = styled.span`
   color: ${(props) => props.theme.colors.primary};
-  font-size: ${(props) => props.theme.fonts.subHeading.sz};
-  line-height: ${(props) => props.theme.fonts.subHeading.lh};
+  font-size: ${(props) => props.theme.fonts.cta.sz};
+  line-height: ${(props) => props.theme.fonts.cta.lh};
 `;
 
 export const StyledAccent = styled.span<
