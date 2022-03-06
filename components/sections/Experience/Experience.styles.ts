@@ -9,7 +9,7 @@ export const ExperienceItem = styled(StyledItem)``;
 
 export const ExperienceSubList = styled.ul`
   width: 100%;
-  margin-top: ${(props) => props.theme.spacing.sm};
+  margin-top: ${(props) => props.theme.spacing.lg};
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: ${(props) => props.theme.spacing.sm};
