@@ -7,4 +7,5 @@ export interface HeadlineProps {
   accent?: string;
   after?: string;
   accentColor?: keyof typeof colors;
+  isCentered?: boolean;
 }

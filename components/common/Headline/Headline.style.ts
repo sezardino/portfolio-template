@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { HeadlineProps } from "./Headline.props";
 
-export const StyledHeadline = styled.div`
+export const StyledHeadline = styled.div<Pick<HeadlineProps, "isCentered">>`
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: ${(props) => (props.isCentered ? "center" : "left")};
   gap: ${(props) => props.theme.spacing.xs};
 `;
 

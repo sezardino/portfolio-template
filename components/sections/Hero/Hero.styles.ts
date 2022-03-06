@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.div`
-  padding: 40px 20px;
-  display: grid;
-  align-items: center;
-  gap: ${(props) => props.theme.spacing.xl};
-  position: relative;
-`;
-
 export const ButtonsWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -43,10 +35,10 @@ export const ScrollCta = styled.a`
   }
 
   @media (hover: hover) {
-      &:hover {
-        color: ${(props) => props.theme.colors.accent};
-      }
+    &:hover {
+      color: ${(props) => props.theme.colors.accent};
     }
+  }
 `;
 
 export const ContactLinks = styled.div`

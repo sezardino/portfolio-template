@@ -3,6 +3,7 @@ import myImage from "@/assets/hero/image-1.png";
 import LiIcon from "@/assets/icons/li.svg";
 import GitIcon from "@/assets/icons/git.svg";
 
+import { StyledSection } from "@/styles";
 import { Button } from "@/components/common/Button/Button";
 import { Headline } from "@/components/common/Headline/Headline";
 import {
@@ -10,7 +11,6 @@ import {
   ContactLinks,
   ImageWrapper,
   ScrollCta,
-  StyledSection,
 } from "./Hero.styles";
 
 export const Hero: React.FC = () => {

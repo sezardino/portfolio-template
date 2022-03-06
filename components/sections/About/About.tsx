@@ -1,29 +1,29 @@
 import { Headline } from "@/components/common/Headline/Headline";
 import {
+  AboutContainer,
+  AboutContent,
+  AboutItem,
+  AboutList,
   ImageWrapper,
-  StyledContainer,
-  StyledContent,
-  StyledItem,
-  StyledList,
-  StyledSection,
 } from "./About.styles";
 import ExperienceIcon from "@/assets/icons/experience.svg";
 import ProjectsIcon from "@/assets/icons/projects.svg";
 import Image from "next/image";
 
 import aboutImage from "@/assets/about/image-1.png";
+import { StyledSection } from "@/styles";
 
 export const About: React.FC = (props) => {
   return (
     <StyledSection>
       <Headline as="h2" before="Get To Know" accent="About Me" />
-      <StyledContainer>
+      <AboutContainer>
         <ImageWrapper>
           <Image alt="my image" src={aboutImage} width="336" height="336" />
         </ImageWrapper>
         <div>
-          <StyledList>
-            <StyledItem>
+          <AboutList>
+            <AboutItem>
               <ExperienceIcon width="24" height="24" />
               <Headline
                 as="h3"
@@ -32,8 +32,8 @@ export const About: React.FC = (props) => {
                 accent="Experience"
                 accentColor="white"
               />
-            </StyledItem>
-            <StyledItem>
+            </AboutItem>
+            <AboutItem>
               <ProjectsIcon width="24" height="24" />
               <Headline
                 as="h3"
@@ -42,9 +42,9 @@ export const About: React.FC = (props) => {
                 accent="Projects"
                 accentColor="white"
               />
-            </StyledItem>
-          </StyledList>
-          <StyledContent>
+            </AboutItem>
+          </AboutList>
+          <AboutContent>
             <p>
               I am a junior front-end developer. I create websites and
               web-applications using modern technologies based on modern
@@ -55,9 +55,9 @@ export const About: React.FC = (props) => {
               and bestPracticed, and I carry out the tasks entrusted to me
               accurately and in time
             </p>
-          </StyledContent>
+          </AboutContent>
         </div>
-      </StyledContainer>
+      </AboutContainer>
     </StyledSection>
   );
 };
