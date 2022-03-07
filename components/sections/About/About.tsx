@@ -1,4 +1,6 @@
-import { Headline } from "@/components/common/Headline/Headline";
+import Image from "next/image";
+import { Headline } from "@/components/common";
+import { StyledSection } from "@/styles";
 import {
   AboutContainer,
   AboutContent,
@@ -6,14 +8,12 @@ import {
   AboutList,
   ImageWrapper,
 } from "./About.styles";
+
 import ExperienceIcon from "@/assets/icons/experience.svg";
 import ProjectsIcon from "@/assets/icons/projects.svg";
-import Image from "next/image";
-
 import aboutImage from "@/assets/about/image-1.png";
-import { StyledSection } from "@/styles";
 
-export const About: React.FC = (props) => {
+export const About: React.FC = () => {
   return (
     <StyledSection>
       <Headline as="h2" before="Get To Know" accent="About Me" />

@@ -20,10 +20,6 @@ export const StyledWrapper = styled.div`
   }
 
   @media ${(props) => props.theme.media.mdDesktop} {
-    max-width: 1300px;
-  }
-
-  @media ${(props) => props.theme.media.xlDesktop} {
-    max-width: 1620px;
+    max-width: 1280px;
   }
 `;

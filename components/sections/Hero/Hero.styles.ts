@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const ButtonsWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: ${(props) => props.theme.spacing.md};
-`;
-
 export const ImageWrapper = styled.div`
   padding: 25px 25px 0 25px;
   border-radius: 375px 375px 15px 15px;

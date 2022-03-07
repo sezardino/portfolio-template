@@ -5,7 +5,9 @@ export const ExperienceList = styled(StyledList)`
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 `;
 
-export const ExperienceItem = styled(StyledItem)``;
+export const ExperienceItem = styled(StyledItem)`
+  padding: 56px;
+`;
 
 export const ExperienceSubList = styled.ul`
   width: 100%;

@@ -1,17 +1,12 @@
 import Image from "next/image";
+import { Headline, Button } from "@/components/common";
+
+import { ButtonsWrapper, StyledSection } from "@/styles";
+import { ContactLinks, ImageWrapper, ScrollCta } from "./Hero.styles";
+
 import myImage from "@/assets/hero/image-1.png";
 import LiIcon from "@/assets/icons/li.svg";
 import GitIcon from "@/assets/icons/git.svg";
-
-import { StyledSection } from "@/styles";
-import { Button } from "@/components/common/Button/Button";
-import { Headline } from "@/components/common/Headline/Headline";
-import {
-  ButtonsWrapper,
-  ContactLinks,
-  ImageWrapper,
-  ScrollCta,
-} from "./Hero.styles";
 
 export const Hero: React.FC = () => {
   return (

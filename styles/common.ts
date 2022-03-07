@@ -28,3 +28,10 @@ export const StyledItem = styled.li`
   background-color: ${(props) => props.theme.colors.secondaryWhite};
   border-radius: ${(props) => props.theme.borderRadius.sm};
 `;
+
+export const ButtonsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: ${(props) => props.theme.spacing.md};
+`;
