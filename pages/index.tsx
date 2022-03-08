@@ -1,4 +1,10 @@
-import { About, Experience, Hero, Portfolio } from "@/components/sections";
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Portfolio,
+} from "@/components/sections";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -8,6 +14,7 @@ const Home: NextPage = () => {
       <About />
       <Experience />
       <Portfolio />
+      <Contact />
     </>
   );
 };
