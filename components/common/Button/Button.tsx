@@ -1,10 +1,17 @@
 import { ButtonProps } from "./Button.props";
 import { PrimaryButton, SecondaryButton, LinkButton } from "./Button.styles";
 
-export const Button: React.FunctionComponent<ButtonProps> = (props) => {
-  const { type = "primary", children } = props;
+export const Button: React.FC<ButtonProps> = (props) => {
+  const { type = "primary", children, ...rest } = props;
 
-  const Tag = type === "primary" ? PrimaryButton : type === "secondary" ? SecondaryButton : LinkButton;
+  const slot = children as JSX.Element | JSX.Element[];
 
-  return <Tag>{children}</Tag>;
+  const Tag =
+    type === "primary"
+      ? PrimaryButton
+      : type === "secondary"
+      ? SecondaryButton
+      : LinkButton;
+
+  return <Tag {...rest}>{slot}</Tag>;
 };
