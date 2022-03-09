@@ -12,8 +12,8 @@ import { backendSkills, frontendSkills, Skill } from "./Experience.const";
 
 export const Experience: React.FC = () => {
   const getSkillsItems = (items: Skill[]) => {
-    return items.map((item) => (
-      <ExperienceSubItem key={item.name}>
+    return items.map((item, index) => (
+      <ExperienceSubItem key={`${item.name}-${index}`}>
         <AchievementIcon width="16" height="16" />
         <Headline
           isCentered={false}
