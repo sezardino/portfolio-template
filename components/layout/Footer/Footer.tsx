@@ -9,16 +9,16 @@ import {
 
 export const Footer: React.FC = () => {
   const footerNavigation = footerLinks.map((link, index) => (
-    <FooterItem key={`${index}-${link.link}`}>
-      <Button type="link" href={link.link}>
+    <FooterItem key={`${index}-${link.href}`}>
+      <Button type="link" href={link.href}>
         {link.label}
       </Button>
     </FooterItem>
   ));
 
   const footerSocialList = footerSocial.map((link, index) => (
-    <FooterItem key={`${index}-${link.value}`}>
-      <Button type="link" href={link.value} aria-label={link.label}>
+    <FooterItem key={`${index}-${link.href}`}>
+      <Button type="link" href={link.href} aria-label={link.label}>
         <FooterIcon as={link.icon} width="32" height="32" />
       </Button>
     </FooterItem>

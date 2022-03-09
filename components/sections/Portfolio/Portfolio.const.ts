@@ -7,15 +7,10 @@ import Image6 from "@/assets/portfolio/image-6.jpg";
 import Image7 from "@/assets/portfolio/image-7.jpg";
 import Image8 from "@/assets/portfolio/image-8.jpg";
 import Image9 from "@/assets/portfolio/image-9.jpg";
+import { PortfolioWork } from "@/types";
+
 import Image10 from "@/assets/portfolio/image-10.jpg";
 import Image11 from "@/assets/portfolio/image-11.jpg";
-
-interface PortfolioWork {
-  image: StaticImageData;
-  name: string;
-  github: string;
-  demo: string;
-}
 
 export const works: PortfolioWork[] = [
   {

@@ -14,10 +14,10 @@ import {
 
 export const Contact: React.FC = () => {
   const items = contactItems.map(({ icon: Icon, ...content }, index) => (
-    <ContactItem key={`${content.value}-${index}`}>
+    <ContactItem key={`${content.href}-${index}`}>
       <Icon width="32" height="32" />
       <p>{content.label}</p>
-      <p>{content.value}</p>
+      <p>{content.href}</p>
     </ContactItem>
   ));
 

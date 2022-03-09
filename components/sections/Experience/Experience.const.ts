@@ -1,14 +1,4 @@
-enum SkillLevel {
-  JUNIOR = "Junior",
-  REGULAR = "Regular",
-  ADVANCED = "Advanced",
-  MASTER = "Master",
-}
-
-export interface Skill {
-  name: string;
-  level: SkillLevel;
-}
+import { Skill, SkillLevel } from "@/types";
 
 export const frontendSkills: Skill[] = [
   { name: "HTML", level: SkillLevel.MASTER },

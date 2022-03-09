@@ -6,9 +6,10 @@ import {
   ExperienceSubList,
   ExperienceSubItem,
 } from "./Experience.styles";
+import { Skill } from "@/types";
 
 import AchievementIcon from "@/assets/icons/achievement.svg";
-import { backendSkills, frontendSkills, Skill } from "./Experience.const";
+import { backendSkills, frontendSkills } from "./Experience.const";
 
 export const Experience: React.FC = () => {
   const getSkillsItems = (items: Skill[]) => {
