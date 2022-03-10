@@ -1,3 +1,4 @@
+import { HTMLProps } from "react";
 import { SkillLevel } from "./enums";
 
 export interface LinkContent {
@@ -19,4 +20,8 @@ export interface PortfolioWork {
   name: string;
   github: string;
   demo: string;
+}
+
+export interface DefaultSectionProps {
+  id: string;
 }

@@ -5,16 +5,17 @@ import {
   Hero,
   Portfolio,
 } from "@/components/sections";
+import { SectionsIds } from "@/types";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Hero />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Contact />
+      <Hero id={SectionsIds.HOME} />
+      <About id={SectionsIds.ABOUT} />
+      <Experience id={SectionsIds.EXPERIENCE} />
+      <Portfolio id={SectionsIds.PORTFOLIO} />
+      <Contact id={SectionsIds.CONTACT} />
     </>
   );
 };

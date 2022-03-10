@@ -1,4 +1,4 @@
-import { LinkWithIcon } from "@/types";
+import { LinkWithIcon, SectionsIds } from "@/types";
 
 import HomeIcon from "@/assets/icons/home.svg";
 import AboutIcon from "@/assets/icons/about.svg";
@@ -10,26 +10,26 @@ export const navbarLinks: LinkWithIcon[] = [
   {
     icon: HomeIcon,
     label: "Hero",
-    href: "#",
+    href: `#${SectionsIds.HOME}`,
   },
   {
     icon: AboutIcon,
     label: "About",
-    href: "#",
+    href: `#${SectionsIds.ABOUT}`,
   },
   {
     icon: ExperienceIcon,
     label: "Experience",
-    href: "#",
+    href: `#${SectionsIds.EXPERIENCE}`,
   },
   {
     icon: PortfolioIcon,
     label: "Portfolio",
-    href: "#",
+    href: `#${SectionsIds.PORTFOLIO}`,
   },
   {
     icon: ContactIcon,
     label: "Contact",
-    href: "#",
+    href: `#${SectionsIds.CONTACT}`,
   },
 ];

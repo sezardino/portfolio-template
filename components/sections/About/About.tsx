@@ -12,10 +12,12 @@ import {
 import ExperienceIcon from "@/assets/icons/experience.svg";
 import ProjectsIcon from "@/assets/icons/projects.svg";
 import aboutImage from "@/assets/about/image-1.png";
+import { DefaultSectionProps } from "@/types";
 
-export const About: React.FC = () => {
+export const About: React.FC<DefaultSectionProps> = (props) => {
+  const { id } = props;
   return (
-    <StyledSection>
+    <StyledSection id={id}>
       <Headline as="h2" before="Get To Know" accent="About Me" />
       <AboutContainer>
         <ImageWrapper>

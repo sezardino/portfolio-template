@@ -1,28 +1,28 @@
-import { LinkContent, LinkWithIcon } from "@/types";
+import { LinkContent, LinkWithIcon, SectionsIds } from "@/types";
 import TelegramIcon from "@/assets/icons/telegram.svg";
 import FacebookIcon from "@/assets/icons/facebook.svg";
 import EmailIcon from "@/assets/icons/email.svg";
 
 export const footerLinks: LinkContent[] = [
   {
-    label: "Hero",
-    href: "#",
+    label: "Home",
+    href: `#${SectionsIds.HOME}`,
   },
   {
     label: "About",
-    href: "#",
+    href: `#${SectionsIds.ABOUT}`,
   },
   {
     label: "Experience",
-    href: "#",
+    href: `#${SectionsIds.EXPERIENCE}`,
   },
   {
     label: "Portfolio",
-    href: "#",
+    href: `#${SectionsIds.PORTFOLIO}`,
   },
   {
     label: "Contact",
-    href: "#",
+    href: `#${SectionsIds.CONTACT}`,
   },
 ];
 

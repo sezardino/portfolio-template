@@ -4,6 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   html {
     height: 100%;
     font-size: ${(props) => props.theme.fonts.html};
+    scroll-behavior: smooth;
   }
 
   body {

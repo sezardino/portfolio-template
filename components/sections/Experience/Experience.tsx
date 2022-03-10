@@ -6,12 +6,13 @@ import {
   ExperienceSubList,
   ExperienceSubItem,
 } from "./Experience.styles";
-import { Skill } from "@/types";
+import { DefaultSectionProps, Skill } from "@/types";
 
 import AchievementIcon from "@/assets/icons/achievement.svg";
 import { backendSkills, frontendSkills } from "./Experience.const";
 
-export const Experience: React.FC = () => {
+export const Experience: React.FC<DefaultSectionProps> = (props) => {
+  const { id } = props;
   const getSkillsItems = (items: Skill[]) => {
     return items.map((item, index) => (
       <ExperienceSubItem key={`${item.name}-${index}`}>
@@ -28,7 +29,7 @@ export const Experience: React.FC = () => {
   };
 
   return (
-    <StyledSection>
+    <StyledSection id={id}>
       <Headline before="Known technologies" accent="My Experience" />
       <ExperienceList>
         <ExperienceItem>

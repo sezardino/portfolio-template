@@ -1,5 +1,6 @@
 import { Headline } from "@/components/common";
 import { StyledSection } from "@/styles";
+import { DefaultSectionProps } from "@/types";
 import { contactItems } from "./Contact.const";
 
 import {
@@ -12,7 +13,9 @@ import {
   ContactWrapper,
 } from "./Contact.styles";
 
-export const Contact: React.FC = () => {
+export const Contact: React.FC<DefaultSectionProps> = (props) => {
+  const { id } = props;
+
   const items = contactItems.map(({ icon: Icon, ...content }, index) => (
     <ContactItem key={`${content.href}-${index}`}>
       <Icon width="32" height="32" />
@@ -22,7 +25,7 @@ export const Contact: React.FC = () => {
   ));
 
   return (
-    <StyledSection>
+    <StyledSection id={id}>
       <Headline before="Get in Touch" accent="Contact Me" />
       <ContactWrapper>
         <ContactList>{items}</ContactList>

@@ -1,5 +1,6 @@
 import { Button, Headline } from "@/components/common";
 import { ButtonsWrapper, StyledSection } from "@/styles";
+import { DefaultSectionProps } from "@/types";
 import Image from "next/image";
 import { works } from "./Portfolio.const";
 import {
@@ -8,9 +9,11 @@ import {
   PortfolioList,
 } from "./Portfolio.styles";
 
-export const Portfolio: React.FC = () => {
+export const Portfolio: React.FC<DefaultSectionProps> = (props) => {
+  const { id } = props;
+
   return (
-    <StyledSection>
+    <StyledSection id={id}>
       <Headline before="My recent works" accent="My Portfolio" />
       <PortfolioList>
         {works.map((project) => (
