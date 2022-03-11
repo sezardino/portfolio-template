@@ -29,7 +29,7 @@ export const Experience: React.FC<DefaultSectionProps> = (props) => {
   };
 
   return (
-    <StyledSection id={id}>
+    <StyledSection as="section" id={id}>
       <Headline before="Known technologies" accent="My Experience" />
       <ExperienceList>
         <ExperienceItem>

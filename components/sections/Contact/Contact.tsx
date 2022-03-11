@@ -25,7 +25,7 @@ export const Contact: React.FC<DefaultSectionProps> = (props) => {
   ));
 
   return (
-    <StyledSection id={id}>
+    <StyledSection as="section" id={id}>
       <Headline before="Get in Touch" accent="Contact Me" />
       <ContactWrapper>
         <ContactList>{items}</ContactList>

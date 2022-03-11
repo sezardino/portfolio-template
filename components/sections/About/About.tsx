@@ -17,7 +17,7 @@ import { DefaultSectionProps } from "@/types";
 export const About: React.FC<DefaultSectionProps> = (props) => {
   const { id } = props;
   return (
-    <StyledSection id={id}>
+    <StyledSection as="section" id={id}>
       <Headline as="h2" before="Get To Know" accent="About Me" />
       <AboutContainer>
         <ImageWrapper>

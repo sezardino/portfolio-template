@@ -12,7 +12,7 @@ import { DefaultSectionProps, SectionsIds } from "@/types";
 export const Hero: React.FC<DefaultSectionProps> = (props) => {
   const { id } = props;
   return (
-    <StyledSection id={id}>
+    <StyledSection as="section" id={id}>
       <Headline
         accentColor="accent"
         as="h1"

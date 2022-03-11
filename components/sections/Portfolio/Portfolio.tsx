@@ -13,7 +13,7 @@ export const Portfolio: React.FC<DefaultSectionProps> = (props) => {
   const { id } = props;
 
   return (
-    <StyledSection id={id}>
+    <StyledSection as="section" id={id}>
       <Headline before="My recent works" accent="My Portfolio" />
       <PortfolioList>
         {works.map((project) => (
