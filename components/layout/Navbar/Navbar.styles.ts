@@ -24,6 +24,11 @@ export const Link = styled.a`
 
 export const Icon = styled.svg`
   fill: ${(props) => props.theme.colors.primary};
+  transition: 0.4s fill ease-in-out;
+`;
+
+export const ActiveIcon = styled(Icon)`
+  fill: ${(props) => props.theme.colors.secondary};
 `;
 
 export const Indicator = styled.div`
@@ -39,4 +44,5 @@ export const Indicator = styled.div`
   transform: translateY(-50%);
   z-index: 1;
   box-sizing: content-box;
+  transition: 0.4s left ease-in-out;
 `;

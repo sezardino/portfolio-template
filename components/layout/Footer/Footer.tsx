@@ -5,6 +5,7 @@ import {
   FooterItem,
   FooterList,
   StyledFooter,
+  FooterSocial,
 } from "./Footer.styles";
 
 export const Footer: React.FC = () => {
@@ -28,7 +29,7 @@ export const Footer: React.FC = () => {
     <StyledFooter>
       <Headline as="h2" accent="Edward Arechwa" />
       <FooterList>{footerNavigation}</FooterList>
-      <FooterList>{footerSocialList}</FooterList>
+      <FooterSocial>{footerSocialList}</FooterSocial>
 
       <p>All rights reserved.</p>
     </StyledFooter>

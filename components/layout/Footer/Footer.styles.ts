@@ -14,6 +14,16 @@ export const StyledFooter = styled.footer`
 export const FooterList = styled.ul`
   display: flex;
   gap: ${(props) => props.theme.spacing.sm};
+
+  @media ${(props) => props.theme.media.mobileOnly} {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const FooterSocial = styled.ul`
+  display: flex;
+  gap: ${(props) => props.theme.spacing.sm};
 `;
 
 export const FooterItem = styled.li``;

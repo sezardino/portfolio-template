@@ -8,6 +8,11 @@ export const StyledSection = styled(StyledWrapper)`
   align-items: center;
   gap: ${(props) => props.theme.spacing.xl};
   position: relative;
+
+  @media ${(props) => props.theme.media.mdDesktop} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 `;
 
 export const StyledList = styled.ul`
