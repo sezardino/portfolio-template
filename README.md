@@ -1,4 +1,6 @@
-# Portfolio template
+# React styled components
+
+This project created for learning of styled components
 
 ## Technologies used
 
